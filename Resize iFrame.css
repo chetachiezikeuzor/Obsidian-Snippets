@@ -1,0 +1,15 @@
+.resize-iframe.markdown-preview-view {
+  padding: 0px;
+}
+
+.resize-iframe > .markdown-preview-sizer.markdown-preview-section
+{
+  height: 100%;
+  padding: 0% !important;
+  max-width: none !important;
+}
+
+.resize-iframe > .markdown-preview-sizer.markdown-preview-section > div:last-child
+{
+  height: 100%;
+}

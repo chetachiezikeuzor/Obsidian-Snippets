@@ -1,0 +1,114 @@
+/*=============== DIRTY WYSIWYM HEADERS by _ph =====================*/
+/*=============== replace H1-H6 markup in edit mode ================*/
+.CodeMirror-sizer{
+  margin-left: 48px;
+}
+
+/*-- reduce left padding --*/
+.CodeMirror {
+  height: 100%;
+  direction: ltr;
+  padding: 0 10px;
+}
+
+
+/*-- header color --*/
+.cm-header.cm-header-1{
+  color: var(--text-accent);
+  left:0px;
+  position: relative;
+}
+
+
+.cm-header.cm-header-2{
+  color: var(--text-accent2);
+  left:0px;
+  position: relative;
+}
+
+/*-- hide # markup--*/
+.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1,
+.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2,
+.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3,
+.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4,
+.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5,
+.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6
+{font-size:0px;}
+
+/*-- display H1-h6 in gutter--*/
+.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1:before{
+  content:"H1";
+  font-size:18px;
+  color: var(--text-accent2);
+  left:-48px;
+  top: 5px;
+  position:absolute;
+}
+.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2:before{
+  content:"H2";
+  font-size:13px;
+  color: var(--text-accent2);
+  left:-48px;
+  top: 24px;
+  position:absolute;
+}
+.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3:before{
+  content:"H3";
+  font-size:11px;
+  color: var(--text-accent2);
+  left:-41px;
+  top: 16px;
+  position:absolute;
+}
+.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4:before{
+  content:"H4";
+  font-size:10px;
+  color: var(--text-accent2);
+  left:-41px;
+  top: 10px;
+  position:absolute;
+}
+.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5:before{
+  content:"H5";
+  font-size:10px;
+  color: var(--text-accent2);
+  left:-41px;
+  top: 10px;
+  position:absolute;
+}
+.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6:before{
+  content:"H6";
+  font-size:10px;
+  color: var(--text-accent2);
+  left:-41px;
+  top: 10px;
+  position:absolute;
+}
+
+/*-- is active line, hide H[1-6] in gutter --*/
+.CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1:before,
+.CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2:before,
+.CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3:before,
+.CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4:before,
+.CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5:before,
+.CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6:before
+{font-size:0px;}
+/*-- is active line, display # markup --*/
+.CodeMirror-activeline > pre > span .cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1{
+  font-size:32px;
+  display:inline;
+}
+.CodeMirror-activeline > pre > span .cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2{
+  font-size:24px;
+  display:inline;
+}
+.CodeMirror-activeline > pre > span .cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3{
+  font-size:19px;
+  display:inline;
+}
+.CodeMirror-activeline > pre > span .cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4,
+.CodeMirror-activeline > pre > span .cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5,
+.CodeMirror-activeline > pre > span .cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6{
+  font-size:13px;
+  display:inline;
+}

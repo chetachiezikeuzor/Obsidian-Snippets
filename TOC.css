@@ -1,0 +1,39 @@
+.outline {
+  counter-reset: rootLayout;
+}
+.outline .tree-item .tree-item-self .tree-item-inner::before {
+  content: counters(rootLayout, ".") ". ";
+  counter-increment: rootLayout;
+}
+.tree-item-children {
+  counter-reset: internalLayout;
+}
+.tree-item-children .tree-item .tree-item-self .tree-item-inner::before {
+  content: counters(rootLayout, ".") "." counters(internalLayout, ".") ". ";
+  counter-increment: internalLayout;
+}
+
+/* nested list counting (ex: 1.1, 1.2) */
+/* https://github.com/hipstersmoothie/obsidian-plugin-toc#detailed-nested-ordered-lists */
+ol {
+  counter-reset: item;
+}
+
+ol li {
+  display: block;
+}
+
+ol li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+  padding-right: 5px;
+}
+
+.table-view-table {
+    counter-reset: section;
+}
+
+.table-view-table > tbody > tr > td:first-child::before {
+    counter-increment: section;
+    content: counter(section) ". ";
+}
