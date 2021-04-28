@@ -1,0 +1,152 @@
+
+:root{
+    --red: #ff5582; /*#ff5582 #ff5555 #ff879f*/
+    --pink: #f2b3cf; /*#f2b3dc #e8b4c2 #e8b4b8;*/
+    --fairpink:	#eed3e1; /*#eed3d5;*/
+    --yellow:	 #fff3a3;
+    --linen: #fcecec;
+    --paleblue: #b5d3ff; /*#b5e1ff #b5d3ff (#bfd9ff; - this is the previous one) #bdd1ef;*/
+    --purple: #d2b3ff; /*#bd93f9 #e5bfff #ecc8fc;*/
+    --palegreen:	#bbfabb;
+    --cornflower-blue: #a1c4fd;
+    --light-cornflower-blue: #adccff;
+    --duskblue: #a2acc3; 
+    --gray: #cacfd9;
+    --boldred: #ff5555;
+    --boldyellow: #ffff00;
+    --boldorange: #ffb86c;
+    --boldlightpink: #ffbaeb;
+}
+
+.theme-dark{
+    /*----------------------------------------------------------------
+    HIGHLIGHTERS 
+    ----------------------------------------------------------------*/
+    --yellow-highlighter: var(--yellow);
+    --pink-highlighter:	 var(--pink);
+    --red-highlighter:	 var(--red);
+    --blue-highlighter:	 var(--paleblue);
+    --green-highlighter: var(--palegreen);
+    --purple-highlighter:	 var(--purple);
+    --orange-highlighter: var(--boldorange);
+    --grey-highlighter: var(--gray);
+
+    --text-highlight-rgb: var(--pink-highlighter);
+}
+
+.theme-light{
+    /*----------------------------------------------------------------
+    HIGHLIGHTERS 
+    ----------------------------------------------------------------*/
+    --yellow-highlighter: var(--yellow);
+    --pink-highlighter:	 var(--boldlightpink);
+    --red-highlighter: var(--red);
+    --blue-highlighter:	var(--paleblue);
+    --green-highlighter: var(--palegreen);
+    --purple-highlighter:	var(--purple);
+    --orange-highlighter: var(--boldorange);
+    --grey-highlighter: var(--gray);
+
+    --text-highlight-rgb: var(--yellow-highlighter);
+}
+
+/*----------------------------------------------------------------
+HIGHLIGHTING (MARK)
+----------------------------------------------------------------*/
+mark > strong {
+  color: var(--text-highlight-color) !important;
+  font-weight: 900;
+}
+
+mark > em {
+  color: var(--text-highlight-color) !important;
+  font-weight: 500;
+}
+
+mark{
+  color: var(--text-highlight-color) !important;
+  background-color: var(--text-highlight-rgb) !important;
+}
+
+.markdown-preview-view mark {
+    color: var(--text-highlight-color);
+    font-weight: 500;
+    background-color: var(--text-highlight-rgb);
+}
+
+.cm-s-obsidian span.cm-highlight {
+    color: var(--text-highlight-color);
+    font-weight: 500;
+    background-color: var(--text-highlight-rgb);
+}
+
+/*----------------------------------------------------------------
+REALISTIC HIGHLIGHT
+----------------------------------------------------------------*/
+mark.yellow{ --text-highlight-rgb: var(--yellow-highlighter); }
+mark.pink{ --text-highlight-rgb: var(--pink-highlighter); }
+mark.blue{ --text-highlight-rgb: var(--blue-highlighter); }
+mark.green{ --text-highlight-rgb: var(--green-highlighter); }
+mark.red{ --text-highlight-rgb: var(--red-highlighter);  }
+mark.grey{ --text-highlight-rgb: var(--grey-highlighter);  }
+mark.orange{ --text-highlight-rgb: var(--orange-highlighter);  }
+mark.red{ --text-highlight-rgb: var(--red-highlighter);  }
+mark.purple{ --text-highlight-rgb: var(--purple-highlighter);  }
+
+.markdown-preview-view mark {
+    margin: 0 -0.25em; 
+    padding: 0.15em 0.25em;
+    border-radius: .2em;
+    /*border-radius: 0.8em 0.3em; */
+    background: transparent;
+    background-image: linear-gradient(105deg,
+    transparent 0,
+    transparent 0.3em,
+    rgba(var(--text-highlight-rgb), 0.7) 0.5em,
+    rgba(var(--text-highlight-rgb), 0.4) 1.6em,
+    rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),
+    rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),
+    transparent calc(100% - 0.3em),
+    transparent 100%);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  /*text-shadow: 0 0 0.75em var(--background-primary-alt);*/
+}
+
+.cm-s-obsidian span.cm-highlight {
+  padding:0.15em 0.25em;
+  background: var(--text-highlight-rgb);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  /*text-shadow: 0 0 0.75em var(--background-primary-alt);*/
+}
+
+.cm-s-obsidian span.cm-formatting-highlight{
+  /*margin: 0 0 0 -0.4em;*/
+    padding: 0.15em 0.25em;
+    /*border-radius: 0.3em 0 0 0.3em; /*border radius of left highlight symbol in editor*/
+    /*border-radius: 0.8em 0 0 0.4em;*/
+    background: var(--text-highlight-rgb);
+    background-image: linear-gradient(105deg,
+    transparent 0,
+    transparent 0.3em,
+    rgba(var(--text-highlight-rgb), 0.7) 0.5em,
+    rgba(var(--text-highlight-rgb), 0.4) 1.6em);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.cm-s-obsidian .cm-highlight+span.cm-formatting-highlight {
+    margin: 0 -0.25em 0 0;
+    padding: 0.15em 0.25em;
+    /*border-radius: 0 0.3em 0.3em 0; /*border radius of right highlight symbol in editor*/
+    /*border-radius: 0 0.4em 0.8em 0;*/
+    background: var(--text-highlight-rgb);
+    background-image: linear-gradient(105deg,
+    rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),
+    rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),
+    transparent calc(100% - 0.3em),
+    transparent 100%);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
