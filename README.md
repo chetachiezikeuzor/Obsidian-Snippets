@@ -2,7 +2,7 @@
 Snippets for Obsidian
 
 # Table of Contents
-- [Heading](#Bigger Popovers)
+- [Heading](#Bigger-Popovers)
 - [Heading](#Pretty Highlights)
 - [Heading](#Change Translucency)
 
