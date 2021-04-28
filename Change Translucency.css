@@ -1,0 +1,10 @@
+
+/* Changing these values will change the opacity of window when "Translucent Window" is toggled on */
+
+.theme-dark {
+  --opacity-translucency: 0.6;
+}
+
+.theme-light {
+  --opacity-translucency: 0.5;
+}
