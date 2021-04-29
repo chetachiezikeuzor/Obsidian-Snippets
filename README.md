@@ -1,4 +1,4 @@
-# obsidian-snippets
+# Obsidian-Snippets
 Snippets for Obsidian
 
 # Table of Contents
