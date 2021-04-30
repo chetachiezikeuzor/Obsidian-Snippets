@@ -1,15 +1,38 @@
-.resize-iframe.markdown-preview-view {
-  padding: 0px;
+/*----------------------------------------------------------------
+BIGGER POPOVERS
+----------------------------------------------------------------*/
+
+div.popover.hover-popover {
+  border-radius: 10px;
+  transform: ease-in;
+  transition: ease-out;
+  width: 40rem;
+  background-color: var(--background-primary);
+  border: 2px solid var(--background-modifier-border) !important;
+  max-height: 100%; /*used to be: max-height: 100%  or min-height: auto*/
 }
 
-.resize-iframe > .markdown-preview-sizer.markdown-preview-section
-{
-  height: 100%;
-  padding: 0% !important;
-  max-width: none !important;
+div.popover.hover-popover .markdown-preview-view {
+  font-size: 16px !important;
+  padding-bottom: 2.5rem;
+  padding-top: 1rem;
 }
 
-.resize-iframe > .markdown-preview-sizer.markdown-preview-section > div:last-child
-{
-  height: 100%;
+div.popover.hover-popover .markdown-embed-content .markdown-preview-section {
+  /*preview margin padding*/
+  padding: 0rem;
+}
+
+.popover.hover-popover .markdown-embed {
+  height: 25rem;
+}
+
+.markdown-embed iframe{
+	height: 325px;
+}
+
+.popover.hover-popover .markdown-embed img{
+	max-width: 100%;
+    max-height: auto;
+    margin: 0em;
 }
