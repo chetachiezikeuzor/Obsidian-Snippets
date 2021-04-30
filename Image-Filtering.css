@@ -1,0 +1,39 @@
+/*Image changes */
+
+/*Inspired from @kepano https://discord.com/channels/686053708261228577/702656734631821413/828012547905945652*/
+.theme-dark span[src$="#invert"] img {
+  filter: invert(1) hue-rotate(180deg);
+  background: var(--light3);
+  /*mix-blend-mode: screen;*/
+}
+
+/*more filters*/
+span[src$="#grayscale"] img {
+  filter: grayscale(100%);
+  background: var(--background-primary);
+  /*mix-blend-mode: screen;*/
+}
+
+span[src$="#saturate"] img  {
+	background: var(--background-primary);
+	filter: saturate(7);
+}
+span[src$="#sepia"] img  {
+	background: var(--background-primary);
+	filter: sepia(100%);
+}
+
+span[src$="#border"] img  {
+	border: 2px solid var(--background-modifier-border);
+}
+
+/*theme changes*/
+.theme-dark span[src$="#border&invert"] img  {
+	border: 2px solid var(--background-modifier-border);
+	filter: invert(1) hue-rotate(180deg);
+    background: var(--light3);
+}
+
+.theme-light span[src$="#border&invert"] img  {
+	border: 2px solid var(--background-modifier-border);
+}
