@@ -1,0 +1,29 @@
+
+.theme-dark{
+  --tag-base: var(--background-primary-alt);
+}
+
+.theme-light{
+  --tag-base: var(--background-primary);
+}
+
+.tag {
+  background-color: var(--tag-base);
+  border: 1px solid var(--boldlightpink);
+  color: var(--pink);
+  font-weight: 500;
+  padding: 1.5px 10px;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: .5s ease-in-out;
+}
+
+.tag:hover {
+  color: black !important;
+  text-decoration: none !important;
+  transition: .1s ease-in-out;
+  background-color: var(--boldlightpink);
+}
