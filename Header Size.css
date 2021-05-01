@@ -1,0 +1,29 @@
+.cm-header-1,
+.markdown-preview-section h1{
+    font-size: 34px;
+}
+
+.cm-header-2,
+.markdown-preview-section h2{
+    font-size: 30px;
+}
+
+.cm-header-3,
+.markdown-preview-section h3{
+    font-size: 27px;
+}
+
+.cm-header-4,
+.markdown-preview-section h4{
+    font-size: 24px;
+}
+
+.cm-header-5,
+.markdown-preview-section h5{
+    font-size: 21px;
+}
+
+.cm-header-6,
+.markdown-preview-section h6{
+    font-size: 17.5p;
+}
