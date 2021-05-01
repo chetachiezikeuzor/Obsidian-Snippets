@@ -1,0 +1,51 @@
+/*----------------------------------------------------------------
+RELATIONSHIP LINES
+----------------------------------------------------------------*/
+
+/* Relationship lines in Preview */
+.rel-lines-preview .markdown-preview-view ul ul, .markdown-preview-view ul ul, .rel-lines-preview .markdown-preview-view ol ol, .markdown-preview-view ol ol{
+  position: relative;
+}
+
+.rel-lines-preview .markdown-preview-view ul ul::before, .rel-lines-preview .markdown-preview-view ol ol::before{
+  content: "";
+  border-left: 1px solid var(--background-modifier-border);
+  opacity: .7;
+  position: absolute;
+  margin-left: 0em;
+  left: -0.1em;
+  top: 1;
+  bottom: 0;
+}
+
+.rel-lines-preview .markdown-preview-view ol ol::before{
+  margin-left: -0.8em;
+}
+
+/* Relationship line spacing fix for tasks lists */
+.rel-lines-preview .markdown-preview-view .task-list-item-checkbox {
+  left: -0px;
+  margin-left: 2px !important;
+}
+
+.rel-lines-preview .markdown-preview-view ul.contains-task-list ul::before,
+.rel-lines-preview .markdown-preview-view ul.contains-task-list ul::before {
+  left: -0.1em;
+  bottom: .3em;
+}
+
+/* Relationship lines in Edit mode  */
+.rel-lines-edit .cm-hmd-list-indent > .cm-tab {
+  display: inline-block;
+}
+
+.rel-lines-edit .cm-hmd-list-indent > .cm-tab:after {
+  content:" ";
+  display:block;
+  width: 1px;
+  position: absolute;
+  top: 1px;
+  left: 1.5px;
+  border-right: 1px solid var(--background-modifier-border);
+  height: 100%;
+}
