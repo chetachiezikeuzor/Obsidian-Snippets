@@ -1,0 +1,19 @@
+.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
+  content: "";
+  background-image: url("https://api.iconify.design/mdi:folder-outline.svg?color=%237f8fad&height=22");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 18px;
+  vertical-align: -.15em;
+}
+
+.nav-folder .nav-folder-title .nav-folder-title-content::before {
+  content: "";
+  background-image: url("https://api.iconify.design/mdi:folder-open-outline.svg?color=%237f8fad&height=22");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 18px;
+  vertical-align: -.15em;
+}
