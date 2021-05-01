@@ -1,0 +1,29 @@
+/*----------------------------------------------------------------
+UNORDERED LISTS STYLING
+----------------------------------------------------------------*/
+
+ul {
+  list-style-type: disc;
+}
+ul ul {
+  list-style-type: circle;
+}
+ul ul ul {
+  list-style-type: "▪   ";
+}
+ul ul ul ul{
+  list-style-type: "□   ";
+}
+
+ul ul ul ul ul{
+  list-style-type: disc;
+}
+ul ul ul ul ul ul{
+  list-style-type: circle;
+}
+ul ul ul ul ul ul ul{
+  list-style-type: "▪   ";
+}
+ul ul ul ul ul ul ul ul{
+  list-style-type: "□   ";
+}
