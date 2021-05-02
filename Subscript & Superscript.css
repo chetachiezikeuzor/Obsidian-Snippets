@@ -1,0 +1,17 @@
+/*subscript & superscript*/
+
+.markdown-preview-view sub,
+.markdown-preview-view sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.markdown-preview-view sup {
+  top: -0.5em;
+}
+
+.markdown-preview-view sub {
+  bottom: -0.25em;
+}
