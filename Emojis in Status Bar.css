@@ -1,0 +1,19 @@
+/*Status bar */
+
+.status-bar-item {
+  padding: 0 0 0 10px;
+}
+
+.theme-light .status-bar-item:after{
+	padding-left: 10px;
+	color: var(--boldpink);
+	content: "🌻";
+	font-family: boxicons;
+}
+
+.theme-dark .status-bar-item:after{
+	padding-left: 10px;
+	color: var(--boldlightpink);
+	opacity: .9;
+	content: "🌺";
+}
