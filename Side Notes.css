@@ -1,0 +1,24 @@
+aside:before {
+  content: "";
+  font-size: 2.5em;
+  /*margin-right: .05em;*/
+  line-height: 0.1em;
+  vertical-align: -0.2em;
+}
+
+aside {
+  width: 48%;
+  line-height: 1.75em;
+  padding: 1.25em;
+  margin-left: .75rem;
+  margin-bottom: .75em;
+  position: relative;
+  float: right;
+  border: 2px solid var(--background-modifier-border);
+  color: var(--text-normal);
+  box-shadow: 8px 8px var(--text-faint);
+}
+
+aside > p {
+  margin: .5rem;
+}
