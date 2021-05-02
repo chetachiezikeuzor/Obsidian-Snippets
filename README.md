@@ -8,7 +8,9 @@ Snippets for Obsidian
 - [Pretty Highlights](#Pretty-Highlights)
 
 # Bigger Popovers
-<img width="1680" alt="Bigger Popovers" src="https://user-images.githubusercontent.com/79069364/116458671-85b11580-a82a-11eb-824a-aa3d939e7255.png">
+<img width="1680" alt="Bigger Popovers" src="https://user-images.githubusercontent.com/79069364/116817253-06258e00-ab2b-11eb-9064-dd4c9d7a55c0.png">
+
+
 
 # Change Translucency
 
