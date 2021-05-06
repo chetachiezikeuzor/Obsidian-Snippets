@@ -1,0 +1,9 @@
+/* No scrollbars in popover */
+div.popover.hover-popover  ::-webkit-scrollbar{
+    display: none;
+}
+
+/* No scrollbars in embeds */
+.internal-embed .markdown-embed  ::-webkit-scrollbar{
+    display: none;
+}
