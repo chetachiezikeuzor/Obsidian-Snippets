@@ -1,8 +1,10 @@
+
+/* Active line background */
 .CodeMirror-activeline-background{
     background-color: grey;
 }
 
-
+/*Active line number */
 Mark Active Line Number in Editor
 .cm-s-obsidian .CodeMirror-activeline-gutter > .CodeMirror-linenumber {
   font-weight: 600;
