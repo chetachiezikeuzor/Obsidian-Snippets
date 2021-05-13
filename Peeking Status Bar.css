@@ -1,0 +1,31 @@
+.status-bar,
+.is-translucent .status-bar {
+  background-color: var(--background-secondary-alt);
+  font-size: 13px;
+  position: absolute;
+  margin: auto;
+  right: 24.5%;
+  /*top: -24px;*/
+  bottom: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top: none;
+  padding: 1px 12px 1px 0;
+  color: var(--text-normal);
+  max-height: unset;
+}
+
+.is-translucent .status-bar{
+  background-color: transparent;
+}
+
+.status-bar,
+.is-translucent .status-bar{
+  opacity: 0;
+  transition: 200ms;
+}
+
+.status-bar:hover{
+  opacity: 1;
+  transition: 200ms;
+}
