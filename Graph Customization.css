@@ -1,0 +1,121 @@
+
+:root{
+
+   /*----------------------------------------------------------------
+    COLORS
+    ----------------------------------------------------------------*/
+
+    --red: #ff5582; 
+    --pink: #f2b3cf; 
+    --fairpink: #eed3e1; 
+    --yellow:  #fff3a3;
+    --linen: #fcecec;
+    --paleblue: #b5d3ff; 
+    --purple: #d2b3ff; 
+    --palegreen:  #bbfabb;
+    --cornflower-blue: #a1c4fd;
+    --light-cornflower-blue: #adccff;
+    --duskblue: #a2acc3; 
+    --darkbrown: #34343d;
+    --pureblack:  #000000;
+    --royalblue: #7288da;
+
+    /*----------------------------------------------------------------
+    BOLD COLORS
+    ----------------------------------------------------------------*/
+
+    --boldpink: #fe53bb; 
+    --boldpurple: #7322e6; 
+    --boldred: #ff5555;
+    --boldyellow: #ffff00;
+    --boldorange: #ffb86c;
+    --boldgreen: #85ffa4; 
+    --boldblue: #99e7ff; 
+    --boldlightpink: #ffbaeb;
+
+    /*----------------------------------------------------------------
+    PASTEL COLORS
+    ----------------------------------------------------------------*/
+    --pastelyellow:  #fcf4c9;
+    --pastelcoral: #ffe896;
+    --pastelpink: #fbcdf2;
+    --pastelpurple: #e8befa;
+    --pastelperiwinkle:  #abbfff;
+    --pastelgreen: #bbf3c0;
+}
+
+.theme-dark{
+	 /*----------------------------------------------------------------
+    DARK THEME GRAPH
+    ----------------------------------------------------------------*/
+
+    --graph-line: var(--background-modifier-border); 
+    --graph-line-highlight: var(--linen);
+    --graph-circle-outline: var(--boldlightpink);
+    --graph-fill-attachment: var(--royalblue); 
+    --graph-circle-fill: var(--cornflower-blue); 
+    --graph-circle-fill-highlight: var(--boldblue);
+    --graph-circle-fill-unresolved: #ffa6e5;
+    --graph-fill-tag: var(--boldorange);
+    --graph-arrow: var(--boldpink);
+}
+
+.theme-light{
+	 /*----------------------------------------------------------------
+    LIGHT THEME GRAPH
+    ----------------------------------------------------------------*/
+
+    --graph-line: var(--text-faint); 
+    --graph-line-highlight: var(--fairpink);
+    --graph-circle-outline: var(--boldlightpink);
+    --graph-fill-attachment: var(--boldpurple); 
+    --graph-circle-fill: var(--royalblue); 
+    --graph-circle-fill-highlight: var(--boldblue);
+    --graph-circle-fill-unresolved: var(--boldpink); 
+    --graph-fill-tag: var(--boldblue); 
+    --graph-arrow: var(--boldpurple);
+}
+
+
+/*----------------------------------------------------------------
+GRAPH CUSTOMIZATION
+----------------------------------------------------------------*/
+
+.theme-dark .graph-view.color-fill-tag {
+  color: var(--graph-fill-tag);
+}
+
+.theme-light .graph-view.color-fill-tag {
+  color: var(--graph-fill-tag);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--graph-fill-attachment) !important;
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--graph-circle-fill-unresolved);
+  opacity: 100%;
+}
+
+.graph-view.color-arrow {
+  color: var(--graph-arrow);
+  opacity: 70%;
+}
+
+.graph-view.color-line {
+  color: var(--graph-line);
+  opacity: 0.8;
+}
+
+.graph-view.color-line-highlight {
+  color: var(--graph-line-highlight);
+}
+
+.graph-view.color-fill {
+  color: var(--graph-circle-fill);
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--graph-circle-fill-highlight);
+}
