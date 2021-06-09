@@ -1,14 +1,14 @@
 
 :root{
-    --red: #ff5582; /*#ff5582 #ff5555 #ff879f*/
-    --pink: #f2b3cf; /*#f2b3dc #e8b4c2 #e8b4b8;*/
-    --fairpink:	#eed3e1; /*#eed3d5;*/
+    --red: #ff5582; 
+    --pink: #f2b3cf; 
+    --fairpink:	#eed3e1; 
     --yellow:	 #fff3a3;
     --linen: #fcecec;
     --darkbrown: #34343d;
     --dark0:  #2e3440;
-    --paleblue: #b5d3ff; /*#b5e1ff #b5d3ff (#bfd9ff; - this is the previous one) #bdd1ef;*/
-    --purple: #d2b3ff; /*#bd93f9 #e5bfff #ecc8fc;*/
+    --paleblue: #b5d3ff; 
+    --purple: #d2b3ff; 
     --palegreen:	#bbfabb;
     --cornflower-blue: #a1c4fd;
     --light-cornflower-blue: #adccff;
