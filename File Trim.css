@@ -1,0 +1,22 @@
+/*Text Width*/
+.nav-folder-title,
+.nav-file-title {
+width: calc(100% - 30px);
+}
+
+/*Text Cut Off*/
+.nav-folder-title-content,
+.nav-file-title-content {
+width: 100%;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+/*Close Off Scrolling*/
+.tree-item-inner,
+.search-result-file-title {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
